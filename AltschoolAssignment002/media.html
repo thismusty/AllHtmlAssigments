@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="media.html">Media</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <h1>Media Elements</h1>
+      
+        <h2>Picture element dipicting responsiveness</h2>
+        <picture>
+          <source src="./assets/image/image.jpeg" media="(min-width: 1024px)" />
+          <source src="./assets/image/image.jpeg" media="(min-width: 768px)" />
+          <source src="./assets/image/image.jpeg" media="(max-width: 767px)" />
+          <img src="./assets/image/image.jpeg" alt="A representation of my journey" />
+        </picture>
+     
+      <hr />
+
+      
+        <h2>A video that keeps me motivated always</h2>
+        <video controls>
+          <source src="./assets/video/video.mp4" type="video/mp4" />
+        </video>
+     
+      <hr />
+
+        <h2>An audio about me</h2>
+        <audio controls>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+        </audio>
+     
+      <hr />
+
+     
+        <h2>An inspirational video shared by the tech school i attend</h2>
+        <iframe
+          width="80%"
+          height="500"
+          src="https://www.YouTube.com/embed/UqdUmWa_t_g"
+          frameborder="0"
+          allowfullscreen
+        >
+        </iframe>
+      
+      <br />
+     
+    </div>
+  </body>
+</html>
