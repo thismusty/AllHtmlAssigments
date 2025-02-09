@@ -3,59 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
+    <title>About Mustapha Yusuf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Nunito Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #eaf6ff;
+        color: #0b3d91;
+      }
+
+      header {
+        background-color: #0056b3;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 40px;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      section h2 {
+        color: #0056b3;
+      }
+
+      picture img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 10px;
+      }
+
+      video,
+      audio {
+        width: 100%;
+        border: 2px solid #0056b3;
+        border-radius: 8px;
+        margin-top: 10px;
+      }
+
+      footer {
+        background-color: #0056b3;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
+
+      footer nav a {
+        color: #ffdd57;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      footer nav a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <div>
-      <header>
-        <nav>
-          <ul>
-            <li><a href="table.html">Table</a></li>
-            <li><a href="media.html">Media</a></li>
-          </ul>
-        </nav>
-      </header>
+    <header>
+      <h1>Mustapha Yusuf</h1>
+    </header>
 
-      <h1>Media Elements</h1>
-      
+    <main>
+      <section>
+        <h2>Welcome to My Page</h2>
+        <p>
+          I am a motivated individual committed to mentoring and uplifting
+          others. With a strong passion for personal development, leadership,
+          and creating meaningful change in the community, I strive to inspire
+          and empower those around me.
+        </p>
+      </section>
+
+      <section>
         <h2>Picture element dipicting responsiveness</h2>
+
         <picture>
-          <source src="./assets/image/image.jpeg" media="(min-width: 1024px)" />
-          <source src="./assets/image/image.jpeg" media="(min-width: 768px)" />
-          <source src="./assets/image/image.jpeg" media="(max-width: 767px)" />
-          <img src="./assets/image/image.jpeg" alt="A representation of my journey" />
+          <source
+            srcset="./assets/Image/image.jpg"
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="./assets/Image/image.jpg"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./assets/Image/image.jpg"
+            media="(max-width: 767px)"
+          />
+          <img src="./assets/Image/image.jpg" alt="An amazing view" />
         </picture>
-     
-      <hr />
+      </section>
 
-      
-        <h2>A video that keeps me motivated always</h2>
-        <video controls>
-          <source src="./assets/video/video.mp4" type="video/mp4" />
+      <section>
+        <h2>Media Highlights</h2>
+        <video controls width="100%">
+          <source
+            src="./assets/video/Asake-Peace-Be-Unto-You-PBUY-Official-Video.mp4"
+            type="video/mp4"
+          />
         </video>
-     
-      <hr />
+      </section>
 
-        <h2>An audio about me</h2>
+      <section>
+        <h2>An audio of Fido a Nigerian artist "joy is coming"</h2>
         <audio controls>
-          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+          <source
+            src="./assets/audio/Fido_-_Joy_Is_Coming.mp3"
+            type="audio/mpeg"
+          />
         </audio>
-     
-      <hr />
-
-     
-        <h2>An inspirational video shared by the tech school i attend</h2>
-        <iframe
-          width="80%"
-          height="500"
-          src="https://www.YouTube.com/embed/UqdUmWa_t_g"
-          frameborder="0"
-          allowfullscreen
-        >
-        </iframe>
-      
-      <br />
-     
-    </div>
+      </section>
+    </main>
   </body>
 </html>
